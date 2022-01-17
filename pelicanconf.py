@@ -3,7 +3,9 @@ SITENAME = "Erlandsen.tech"
 SITETITLE = "Erlandsen.tech"
 SITESUBTITLE = "John's science and tech blog"
 SITEDESCRIPTION = "Writeups on math and programming."
-# SITELOGO = ''
+SITEURL ="https://polite-island-0f4179703.1.azurestaticapps.net"
+SITELOGO = SITEURL + "/images/profile.png"
+
 # FAVICON = '/images/favicon.ico'
 BROWSER_COLOR = "#333333"
 PYGMENTS_STYLE = "monokai"

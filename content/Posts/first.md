@@ -3,7 +3,7 @@ date:  Sun Jan 16 18:50:25 CET 2022
 
 ----
 
-## Humble begginings
+## Humble beginnings
 
 I am currently testing a new template engine. I am doing this because I will soon
 start my new master study on industrial economics and leadership. Therefore
