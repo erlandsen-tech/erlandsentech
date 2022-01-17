@@ -22,8 +22,11 @@ jobs:
         uses: py-actions/py-dependency-install@v3
         with:
           path: "requirements.txt"
-      - name: Build pelican
-        run: pelican content -s pelicanconf.py
+      - name: Build pelican blog
+        run: |
+            git clone git@github.com:alexandrevicenzi/Flex.git
+            pelican-theme --install Flex
+            pelican content -s pelicanconf.py
       - name: Build And Deploy
         id: deploy
         uses: Azure/static-web-apps-deploy@v1
