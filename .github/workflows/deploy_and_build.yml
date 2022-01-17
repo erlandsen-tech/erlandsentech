@@ -27,7 +27,7 @@ jobs:
           ###### Repository/Build Configurations ######
           app_location: "/"
           output_location: "output"
-          app_build_command: "make html"
+          # app_build_command: "make html" not needed. build locally
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
