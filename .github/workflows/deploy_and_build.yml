@@ -23,7 +23,7 @@ jobs:
         with:
           path: "requirements.txt"
       - name: Build pelican
-        run: make html
+        run: pelican content -s pelicanconf.py
       - name: Build And Deploy
         id: deploy
         uses: Azure/static-web-apps-deploy@v1
