@@ -27,7 +27,7 @@ jobs:
           ###### Repository/Build Configurations ######
           app_location: ""
           output_location: "output"
-          app_build_command: "pelican content/ -s pelicanconf.py"
+          app_build_command: "pelican content -s pelicanconf.py"
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
