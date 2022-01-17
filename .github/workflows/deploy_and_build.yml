@@ -24,7 +24,7 @@ jobs:
           path: "requirements.txt"
       - name: Build pelican blog
         run: |
-            git clone git@github.com:alexandrevicenzi/Flex.git
+            git clone https://github.com/alexandrevicenzi/Flex.git
             pelican-theme --install Flex
             pelican content -s pelicanconf.py
       - name: Build And Deploy
