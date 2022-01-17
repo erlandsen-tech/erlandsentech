@@ -7,6 +7,9 @@ SITEDESCRIPTION = "Writeups on math and programming."
 # FAVICON = '/images/favicon.ico'
 BROWSER_COLOR = "#333333"
 PYGMENTS_STYLE = "monokai"
+THEME_COLOR = 'dark'
+THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
+THEME_COLOR_ENABLE_USER_OVERRIDE = True
 
 PATH = 'content'
 THEME = 'Flex'
@@ -23,9 +26,8 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'https://getpelican.com/'),
-         ('Python.org', 'https://www.python.org/'),
-         ('Jinja2', 'https://palletsprojects.com/p/jinja/'))
+LINKS = (('SkyeTec', 'https://SkyeTec.no/'),
+         ('Python.org', 'https://www.python.org/'))
 
 # Social widget
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/john-inge-muldal-erlandsen-b11090175/'),
