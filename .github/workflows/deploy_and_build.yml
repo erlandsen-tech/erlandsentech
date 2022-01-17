@@ -25,7 +25,7 @@ jobs:
       - name: Build pelican blog
         run: |
             git clone https://github.com/alexandrevicenzi/Flex.git
-            pelican-theme --install Flex
+            pelican-themes --install Flex
             pelican content -s pelicanconf.py
       - name: Build And Deploy
         id: deploy
