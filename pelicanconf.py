@@ -3,7 +3,7 @@ SITENAME = "Erlandsen.tech"
 SITETITLE = "Erlandsen.tech"
 SITESUBTITLE = "John's science and tech blog"
 SITEDESCRIPTION = "Writeups on math and programming."
-SITEURL ="erlandsen.tech"
+SITEURL ="https://erlandsen.tech"
 SITELOGO = SITEURL + "/images/profile.jpeg"
 
 # FAVICON = '/images/favicon.ico'
