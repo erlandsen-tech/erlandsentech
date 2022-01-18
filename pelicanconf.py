@@ -4,7 +4,7 @@ SITETITLE = "Erlandsen.tech"
 SITESUBTITLE = "John's science and tech blog"
 SITEDESCRIPTION = "Writeups on math and programming."
 SITEURL ="https://polite-island-0f4179703.1.azurestaticapps.net"
-SITELOGO = SITEURL + "/images/profile.png"
+SITELOGO = SITEURL + "/images/profile.jpeg"
 
 # FAVICON = '/images/favicon.ico'
 BROWSER_COLOR = "#333333"
@@ -33,7 +33,8 @@ LINKS = (('SkyeTec', 'https://SkyeTec.no/'),
 
 # Social widget
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/john-inge-muldal-erlandsen-b11090175/'),
-          ('github', 'https://github.com/varleg'))
+          ('github', 'https://github.com/varleg'),
+          ('mail', 'mailto:john@erlandsen.tech'))
 
 DEFAULT_PAGINATION = False
 
