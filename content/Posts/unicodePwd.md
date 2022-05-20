@@ -40,7 +40,6 @@ dn: "CN=storageaccountName,DC=Contoso,DC=Com"
 replace: unicodePwd
 unicodePwd::$b64pwd
 EOF
-echo "$b64pwd"
 ```
 
 Notice the double colon in the LDAPMODIFY, unicodePwd. This is NOT a typo. This is because we cannot use
