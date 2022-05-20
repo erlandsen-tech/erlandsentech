@@ -43,9 +43,35 @@ EOF
 echo "$b64pwd"
 ```
 
+Notice the double colon in the LDAPMODIFY, unicodePwd. This is NOT a typo. This is because we cannot use
+space here as AD will throw a tantrum and refuse to do anything; with the glorious error:
+
+'problem 5003 (WILL_NOT_PERFORM)'
+
+Which is probably one of the less describing errors I have seen in my life. Thank you AD <3
+
+So to walk through the code here:
+1. add double quotes to the password
+2. encode *each char* of the password with UTF16-LE (Thats little endian utf16)
+3. base64 encode the byte-string
+4. strip b'' from beginning and end (because we are not sending a bitstream, but an encoded string)
+5. ldapreplace, ldapadd or ldapmodify the entry in your DN.
+
+---
+
+One more thing to note is that the fields we add the storage account infromation to is
+
+ServicePrincipalName: 'cifs/storageaccount.files.core.windows.net'
+
+and 
+
+unicodePwd
+
+The original documentation here is wrong as it states you need to update SN: and password:
+These fields do not exist on a computer object ...
+
 After you have the BER encoded password, just follow along with the original Microsoft documentation. 
 I have submitted these additional steps as a pull request for the documenation, so hopefully it will get 
 updated, and hopefully it will save those coming after me some time.
 
 Cheers, and happy hacking!
-
