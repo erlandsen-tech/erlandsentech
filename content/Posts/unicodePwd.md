@@ -29,7 +29,7 @@ stripped_result=str(result).strip("b'")
 print(stripped_result)
 ```
 I trigger the script from bash, and pipe it's output to openldap. This is an example of replacing unicodePwd
-with and admin account. 
+with an admin account. 
 
 ```bash
 #!/bin/bash
@@ -50,10 +50,15 @@ space here as AD will throw a tantrum and refuse to do anything; with the glorio
 Which is probably one of the less describing errors I have seen in my life. Thank you AD <3
 
 So to walk through the code here:
+
 1. add double quotes to the password
+
 2. encode *each char* of the password with UTF16-LE (Thats little endian utf16)
+
 3. base64 encode the byte-string
+
 4. strip b'' from beginning and end (because we are not sending a bitstream, but an encoded string)
+
 5. ldapreplace, ldapadd or ldapmodify the entry in your DN.
 
 ---
