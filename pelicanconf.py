@@ -2,7 +2,7 @@ AUTHOR = "John Inge Muldal Erlandsen"
 SITENAME = "Erlandsen.tech"
 SITETITLE = "Erlandsen.tech"
 SITESUBTITLE = "John's science and tech blog"
-SITEDESCRIPTION = "Writeups on math and programming."
+SITEDESCRIPTION = "Writeups on computer science and programming."
 SITEURL ="https://erlandsen.tech"
 SITELOGO = SITEURL + "/images/profile.jpeg"
 
@@ -33,7 +33,7 @@ LINKS = (('SkyeTec', 'https://SkyeTec.no/'),
 
 # Social widget
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/john-inge-muldal-erlandsen-b11090175/'),
-          ('github', 'https://github.com/varleg'),
+          ('github', 'https://github.com/erlandsen-tech'),
           ('envelope', 'mailto:john@erlandsen.tech'))
 
 DEFAULT_PAGINATION = False
